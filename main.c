@@ -1,10 +1,9 @@
-#include  <stdio.h>
-#include  <stdlib.h>
-#include  <time.h> 
-#include <string.h>
-#include <sys/types.h>
-#include <sys/wait.h>
+#include <stdio.h>
 #include <unistd.h>
+#include <stdlib.h>
+#include <time.h> 
+#include <sys/wait.h>
+
 
 #define   MAX_COUNT  2
 
@@ -62,5 +61,7 @@ int main()
     // notify
     printf("Child Pid: %d has completed!\n", pid[n]);
   }
+
+  return 0;
 }
 
